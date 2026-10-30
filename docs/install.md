@@ -4,7 +4,7 @@
 has the details. Something not working: [troubleshooting](troubleshooting.md).
 
 ```sh
-herdr plugin install eliasstravik/herdr-projects
+herdr plugin install theo-lebarq/herdr-projects
 ```
 
 ## What you need
@@ -20,12 +20,12 @@ No Node, no npm: the board is one program.
 ## What the install does
 
 Herdr clones the repo's main branch into its own plugins folder (`herdr plugin list` shows where) and runs the plugin's
-build step there, which downloads the program. `--ref v1.2.4` takes a given release.
+build step there, which downloads the program. `--ref v1.2.4-iad.1` takes a given release.
 
 To keep a checkout of your own instead:
 
 ```sh
-git clone https://github.com/eliasstravik/herdr-projects && cd herdr-projects
+git clone https://github.com/theo-lebarq/herdr-projects && cd herdr-projects
 herdr plugin link "$PWD"          # hooks, the board's tab and the actions
 sh bin/run.sh install             # gets the program, writes its launcher, says how to put it on your PATH
 ```
